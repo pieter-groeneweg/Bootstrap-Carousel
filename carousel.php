@@ -6,7 +6,7 @@
  * drop this in <template>)/html/mod_articles_latest
  * beware this is bootstrap 3, make sure your j! site has bootstrap 3 enabled
  * enjoy making changes if you need. 
- 
+ * Copyright 2020 - pieter groeneweg - info@bizgo.nl */
  */
 
 defined('_JEXEC') or die;
@@ -86,11 +86,9 @@ $count = min(ceil($params->get('count', 5)/$numsfx), ceil(count($list)/$numsfx))
         	echo "</div> \n";
         	$sld=$numsfx;
         }
-
 		$lit++;
 	}
-  
-  	?>
+	?>
 </div>
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
