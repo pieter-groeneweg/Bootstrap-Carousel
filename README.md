@@ -23,6 +23,7 @@ to install, save carousel.php in
 The setup of this alternative view is as simple as setting up the module as you are used too.
 In tab advanced there is module class suffix. 
 This parameter can be set with a number. The number is setting the amount of articles per slide.
+Layout is to be set to "carousel"
 
 ! Note, this needs improvement as the module class suffix may have use for other means of styling in your site. 
 
