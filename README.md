@@ -31,4 +31,20 @@ Layout is to be set to "carousel"
 //the part at will.. //to end part at will
 is the part in between you can make your design changes. 
 $item->whatever is holding whatever article item values. This usually reflects the column names in the database. Sometimes they need some jsondecode like with the images.
+
+the current is working fine in protostar with the addition of following in user.css (add to user.css or create user.css)
+```
+.icon {
+	font-size: 32px;
+}
+.left .icon {
+	margin-left: -12px;
+}
+.right .icon {
+	margin-left: -6px;
+}
+.sr-only {
+	display: none;
+}
+```
 Have fun adapting this to your own.
