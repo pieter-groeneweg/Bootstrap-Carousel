@@ -26,6 +26,7 @@ This parameter can be set with a number. The number is setting the amount of art
 Layout is to be set to "carousel"
 
 ! Note, this needs improvement as the module class suffix may have use for other means of styling in your site. 
+! Note, when in the last slide there are less articles left than the number of articles allowed in the slide, white space is shown.
 
 ## Your own template styling and demands.
 //the part at will.. //to end part at will
