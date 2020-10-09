@@ -11,6 +11,9 @@
  */
 
 defined('_JEXEC') or die;
+
+use Joomla\CMS\Router\Route;
+
 //number of items in a slide is set in module class suffix
 $numsfx = max($params->get('moduleclass_sfx'),1); //needs improvement when ading more than one sfx. (ISOLATE the number)
 //real item (slide) count can be less than set in count parameter
@@ -51,7 +54,7 @@ $count = min(ceil($params->get('count', 5)/$numsfx), ceil(count($list)/$numsfx))
 		echo "<div style='width:". (100/$numsfx) . "%; float:left; position: relative;'> \n";
         
         //start part at will.. just some generic code here you make your changes and/or additions at your own demand. 
-        echo "<a href='".$item->link."' itemprop='url'> \n";
+        echo "<a href='" . Route::_($item->link) . "' itemprop='url'> \n";
 		echo "<img src='". json_decode($item->images)->image_intro ."' width='100%'> \n";
 		echo "<div class='carousel-caption'> \n";
 		echo "<h3>". $item->title . "</h3> \n";
