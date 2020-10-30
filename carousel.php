@@ -55,7 +55,7 @@ $count = min(ceil($params->get('count', 5)/$numsfx), ceil(count($list)/$numsfx))
         
         //start part at will.. just some generic code here you make your changes and/or additions at your own demand. 
         echo "<a href='" . Route::_($item->link) . "' itemprop='url'> \n";
-		echo "<img src='". json_decode($item->images)->image_intro ."' width='100%'> \n";
+		echo "<img src='/". json_decode($item->images)->image_intro ."' width='100%'> \n";
 		echo "<div class='carousel-caption'> \n";
 		echo "<h3>". $item->title . "</h3> \n";
 		echo "</div> \n";
